@@ -1,63 +1,33 @@
 ## Back-end Developer Test
 
-### Devcenter Backend Developer Test I
-
-The purpose of this test is not only to quickly gauge an applicant's abilities with writing codes, but also their approach to development.
-
-Applicants may use whatever language they want to achieve the outcome.
+## Bot InfoExtractor
 
 ## Task
-
 Build a bot that extracts the following from people’s Twitter bio (on public/open accounts), into a Google spreadsheet:
-
-* Twitter profile name 
+* Twitter profile name
 * Number of followers
-
 Target accounts using these criteria:
 * Based on hashtags used
 * Based on number of followers; Between 1,000 - 50,000
-
-The bot is suppose to maintain a session and continously listen to the predefined hashtag
+The bot is suppose to maintain a session and continuously listen to the predefined hashtag
 
 ## Development Language
+* JavaScript (Node.JS)
 
-JavaScript (Node.JS)
-
+## Setup
+* Install Nodejs >= v6.10.3
+* Clone this Project
+* Run npm install to install all dependencies from package.json
+* Run npm test to run all test specs.
 
 ## Getting Started
-
-The following were setup to get started:
-
+The following were required to get started:
 1. Twitter Dev Account/App Setup
-
 2. Create a Project on the Google API Console.
-
-3. Enable Google Spreadsheet API and Google Drive API on the project 
-
-4. Create and Save Service Account Credentials for the project.
-
+3. Enable Google Spreadsheet API and Google Drive API on the project
+4. Obtain Service Account Credentials for the project.
 
 ## How to complete the task
-
-1. Fork this repository into your own public repo.
-
-2. Complete the project and commit your work. Make a screencast of how it works with the googlespread sheet and progam side-by-side. Please watch this sample video to see what your screencast should look like https://youtu.be/mwBqUUtBtlE
-
-3. Send the URL of your own repository and the screencast to @kolawole.balogun on the Slack here bit.ly/dcs-slack.
-
-## Show your working
-
-If you choose to use build tools to compile your CSS and Javascript (such as SASS of Coffescript) please include the original files as well. You may update this README file outlining the details of what tools you have used.
-
-## Clean code
-
-This fictitious project is part of a larger plan to reuse templates for multiple properties. When authoring your CSS ensure that it is easy for another developer to find and change things such as fonts and colours.
-
-
-## Good luck!
-
-We look forward to seeing what you can do. Remember, although it is a test, there are no specific right or wrong answers that we are looking for - just do the job as best you can. Any questions - create an issue in the panel on the right (requires a Github account).
-
-
-## Demo
-![screen shot](https://user-images.githubusercontent.com/8668661/33088863-330b4250-ceef-11e7-9e9c-b4fd9ca299d8.gif)
+1. ![Repo](https://github.com/olawolemoses/backend-test-I)
+2. ![GoogleSheet Link](https://docs.google.com/spreadsheets/d/1KLbE7fZMUkKfD9vq-zhiDrmFmk2xjN3avPc7r654y24/edit#)
+3. ![Screen cast](https://youtu.be/mwBqUUtBtlE)
