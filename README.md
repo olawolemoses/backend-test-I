@@ -26,6 +26,6 @@ The following were required to get started:
 4. Obtain Service Account Credentials for the project.
 
 ## Completed tasks
-1. ![Github Repo](https://github.com/olawolemoses/backend-test-I)
-2. ![GoogleSheet Link](https://docs.google.com/spreadsheets/d/1KLbE7fZMUkKfD9vq-zhiDrmFmk2xjN3avPc7r654y24/edit#)
-3. ![Screen Cast](https://youtu.be/mwBqUUtBtlE)
+1. [a Github Repo](https://github.com/olawolemoses/backend-test-I)
+2. [a GoogleSheet Link](https://docs.google.com/spreadsheets/d/1KLbE7fZMUkKfD9vq-zhiDrmFmk2xjN3avPc7r654y24/edit#)
+3. [a Screen Cast](https://youtu.be/mwBqUUtBtlE)
