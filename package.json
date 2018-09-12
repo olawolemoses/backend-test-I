@@ -4,7 +4,7 @@
   "description": "a twitter bot that extracts the following from people's Twitter bio (on public/open accounts), into a Google spreadsheet",
   "main": "index.js",
   "preferGlobal": true,
-  "bin": "./index.js",
+  "bin": "./index.js run",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

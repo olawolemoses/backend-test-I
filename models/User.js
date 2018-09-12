@@ -1,4 +1,5 @@
 "use strict";
+
 let { updateSpreadsheet } = require('../updateSpreadsheet');
 
 class User {
