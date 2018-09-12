@@ -27,7 +27,7 @@ The following were required to get started:
 3. Enable Google Spreadsheet API and Google Drive API on the project
 4. Obtain Service Account Credentials for the project.
 
-## How to complete the task
-1. ![Repo](https://github.com/olawolemoses/backend-test-I)
+## Completed tasks
+1. ![Github Repo](https://github.com/olawolemoses/backend-test-I)
 2. ![GoogleSheet Link](https://docs.google.com/spreadsheets/d/1KLbE7fZMUkKfD9vq-zhiDrmFmk2xjN3avPc7r654y24/edit#)
-3. ![Screen cast](https://youtu.be/mwBqUUtBtlE)
+3. ![Screen Cast](https://youtu.be/mwBqUUtBtlE)
