@@ -1,11 +1,8 @@
 //google sheet
 const GOOGLE_SPREADSHEET_ID = "1KLbE7fZMUkKfD9vq-zhiDrmFmk2xjN3avPc7r654y24";
-
 //connect to google api
 const {google} = require('googleapis');
-
 const sheets = google.sheets('v4');
-
 let {OAuth2Client} = require('google-auth-library');
 
 
@@ -13,7 +10,6 @@ let {OAuth2Client} = require('google-auth-library');
 //Define interface to update SpreadSheet
 
 const updateSpreadsheet = ( profile ) => {
-	
 	// credentials can't be stored locally
 	const creds = {
 		      client_email: 'devcenter-backend@devcenter-backend.iam.gserviceaccount.com',
@@ -25,43 +21,27 @@ const updateSpreadsheet = ( profile ) => {
 
 	// Defines client
 	const jwtClient = new google.auth.JWT(creds.client_email, null, creds.private_key, scopes);
-	    
 	let auth_mode = 'jwt';
-
 	jwtClient.authorize(function(error, tokens) {
-			
+
 			if (error) {
-				
 				console.log("Error making request to generate access token:", error);
-				
 			} else if (tokens.access_token === null) {
-				
 				console.log("Provided service account does not have permission to generate access tokens");
-			
 			} else {
-				
 				accessToken = tokens.access_token;
-								
 				sheets.spreadsheets.values.append({
-				
 					spreadsheetId: GOOGLE_SPREADSHEET_ID,
-					    
 						range: 'Sheet1',
-					    
 						valueInputOption: 'RAW',
-					    
 						insertDataOption: 'INSERT_ROWS',
-					    
 						resource: {
 					      values: [
 					        [profile.profile_name, profile.no_followers]
 					      ],
-					    },	
-					    
+					    },
 					    auth: jwtClient
-					    
 					  }, (err, response) => { if (err) return console.error(err);}
-					  
 				  );
 			}
 	});
