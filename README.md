@@ -32,7 +32,9 @@ The following were setup to get started:
 
 2. Create a Project on the Google API Console.
 
-3. Enable Google Spreadsheet API and Google Drive API on the project and save the credentials.
+3. Enable Google Spreadsheet API and Google Drive API on the project 
+
+4. Create and Save Service Account Credentials for the project.
 
 
 ## How to complete the task
