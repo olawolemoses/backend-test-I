@@ -29,5 +29,4 @@ The following were required to get started:
 
 ## Completed tasks
 1. [Github Repo](https://github.com/olawolemoses/backend-test-I)
-2. [GoogleSheet Link](https://bit.ly/2p35tZW)
-3. [Screen Cast](https://bit.ly/2Oev2Cn)
+2. [Screen Cast](https://bit.ly/2Oev2Cn)

@@ -1,11 +1,9 @@
 //google sheet
-const GOOGLE_SPREADSHEET_ID = "1KLbE7fZMUkKfD9vq-zhiDrmFmk2xjN3avPc7r654y24";
+const GOOGLE_SPREADSHEET_ID = "1a4FVLp0b0-BgdmN8sgiFuulQeVUqQcajimrNSIGjllk";
 //connect to google api
 const {google} = require('googleapis');
 const sheets = google.sheets('v4');
 let {OAuth2Client} = require('google-auth-library');
-
-
 
 //Define interface to update SpreadSheet
 const updateSpreadsheet = ( profile ) => {
@@ -18,8 +16,8 @@ const updateSpreadsheet = ( profile ) => {
 		if( isNaN(Number(profile.no_followers) ) )
 		throw new Error("no_followers must be a number");
 
-		if( Number( profile.no_followers ) < 1000 || Number( profile.no_followers ) > 50000 )
-		throw new Error("no_followers must be between 1000 and 50000");
+		if( Number(profile.no_followers) < 1000 ||  Number(profile.no_followers) > 50000 )
+		throw new Error("no_followers must be a number");
 
 	// credentials can't be stored locally
 	const creds = {
@@ -41,6 +39,7 @@ const updateSpreadsheet = ( profile ) => {
 				console.error("Provided service account does not have permission to generate access tokens");
 			} else {
 				accessToken = tokens.access_token;
+				console.log( accessToken );
 				sheets.spreadsheets.values.append({
 					spreadsheetId: GOOGLE_SPREADSHEET_ID,
 						range: 'Sheet1',
@@ -53,11 +52,11 @@ const updateSpreadsheet = ( profile ) => {
 					    },
 					    auth: jwtClient
 					  }, (err, response) => {
-									if (err)
-							 			console.error("error");
+									if (err){
+							 			console.error("error", err);
 										//console.error("error on upload");
 								 }
-				  );
+				  });
 			}
 	});
 };
