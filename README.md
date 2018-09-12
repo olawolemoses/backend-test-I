@@ -1,6 +1,4 @@
-## Back-end Developer Test
-
-## Bot InfoExtractor
+# Back-end Developer Test
 
 ## Task
 Build a bot that extracts the following from people’s Twitter bio (on public/open accounts), into a Google spreadsheet:
