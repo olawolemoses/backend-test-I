@@ -19,6 +19,22 @@ Target accounts using these criteria:
 
 The bot is suppose to maintain a session and continously listen to the predefined hashtag
 
+## Development Language
+
+JavaScript (Node.JS)
+
+
+## Getting Started
+
+The following were setup to get started:
+
+1. Twitter Dev Account/App Setup
+
+2. Create a Project on the Google API Console.
+
+3. Enable Google Spreadsheet API and Google Drive API on the project and save the credentials.
+
+
 ## How to complete the task
 
 1. Fork this repository into your own public repo.
