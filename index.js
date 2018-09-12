@@ -13,7 +13,7 @@ const questions = [
     name : "hashtags",
     message : "[+] Enter each hashtag separated by a comma or space: ",
     validate: function( value ) {
-      var pass = value.match(/^(#?[A-z0-9 ,-!])+$/i);
+      var pass = value.match(/^(#?[A-zA-z0-9 ,]*)+$/i);
       if (pass) {
         return true;
       } else {
