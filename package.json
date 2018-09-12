@@ -1,0 +1,23 @@
+{
+  "name": "twitterb0tjs",
+  "version": "1.0.0",
+  "description": "a twitter bot that extracts the following from people's Twitter bio (on public/open accounts), into a Google spreadsheet",
+  "main": "index.js",
+  "preferGlobal": true,
+  "bin": "./index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "olawole moses",
+  "license": "ISC",
+  "dependencies": {
+    "commander": "^2.18.0",
+    "dotenv": "^6.0.0",
+    "express": "^4.16.3",
+    "google-auth-library": "^1.6.1",
+    "googleapis": "^27.0.0",
+    "inquirer": "^6.2.0",
+    "socketio": "^1.0.0",
+    "twit": "^2.2.11"
+  }
+}
