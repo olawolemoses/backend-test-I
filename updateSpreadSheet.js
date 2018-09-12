@@ -25,9 +25,9 @@ const updateSpreadsheet = ( profile ) => {
 	jwtClient.authorize(function(error, tokens) {
 
 			if (error) {
-				console.log("Error making request to generate access token:", error);
+				console.error("Error making request to generate access token:");
 			} else if (tokens.access_token === null) {
-				console.log("Provided service account does not have permission to generate access tokens");
+				console.error("Provided service account does not have permission to generate access tokens");
 			} else {
 				accessToken = tokens.access_token;
 				sheets.spreadsheets.values.append({
@@ -41,7 +41,11 @@ const updateSpreadsheet = ( profile ) => {
 					      ],
 					    },
 					    auth: jwtClient
-					  }, (err, response) => { if (err) return console.error(err);}
+					  }, (err, response) => {
+									if (err)
+							 			console.error("error");
+										//console.error("error on upload");
+								 }
 				  );
 			}
 	});

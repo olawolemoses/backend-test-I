@@ -47,7 +47,7 @@ const streamListener = ( hashtags ) => {
 
 	    // filtering users based on hashtags used and no of followers
 	    if (  user.hashtags_used.length > 0 && (user.no_followers >= 1000 && user.no_followers <= 50000)) {
-	    	newUser = new User(
+	    			newUser = new User(
 												user.id,
 												user.name,
 												user.screen_name,
@@ -55,13 +55,11 @@ const streamListener = ( hashtags ) => {
 												user.no_followers,
 												user.hashtags_used
 											);
-
-	    	// saving to Google Spreadsheet
-	     	newUser.saveUser();
-
-	     	// printing user data to screen
-	    	newUser.printUser();
-	      return;
+		    	// saving to Google Spreadsheet
+		     	newUser.saveUser();
+		     	// printing user data to screen
+		    	newUser.printUser();
+		      return;
 	    }
 	  })
 	.on('limit', function (message) {

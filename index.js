@@ -29,7 +29,7 @@ program
 .description('run the bot to search twitter')
 .action(() => {
   prompt(questions).then( answers => {
-	  	// extract hashtags from input
+	 // extract hashtags from input
 		var hashtags = answers.hashtags.split(/[ ,]+/);
 		//improve hashtag
 		hashtags = hashtags.map( tag => {

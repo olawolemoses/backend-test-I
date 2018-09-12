@@ -11,6 +11,7 @@ class User {
 		this.name = name;
 		this.hashtags_used = hashtags_used;
 	}
+	
 
 	printUser(){
 		console.info("[x] Profile name: " + this.screen_name);
